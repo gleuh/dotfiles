@@ -1,0 +1,9 @@
+[
+
+	{ "keys": ["super+d"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+	{ "keys": ["alt+g"], "command": "goto_definition_scope" },
+	{ "keys": ["alt+u"], "command": "find_use" },
+	{ "keys": ["alt+d"], "command": "import_namespace" },
+	{ "keys": ["alt+e"], "command": "expand_fqcn" },
+	{ "keys": ["alt+f"], "command": "expand_fqcn", "args": {"leading_separator": true} }
+]
