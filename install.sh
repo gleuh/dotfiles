@@ -13,7 +13,11 @@ ln -s ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
 # ZSH
 ln -s ~/dotfiles/zsh/zshrc ~/.zshrc
 ln -s ~/dotfiles/oh-my-zsh ~/.oh-my-zsh
-sudo chsh -s /bin/zsh $USER
+
+if ls /bin/zsh &> /dev/null; then
+    sudo chsh -s /bin/zsh $USER
+fi
+
 
 if [ "$1" = "visual" ]
     then
