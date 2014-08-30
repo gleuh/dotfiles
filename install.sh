@@ -18,6 +18,9 @@ if ls /bin/zsh &> /dev/null; then
     sudo chsh -s /bin/zsh $USER
 fi
 
+# GIT
+ln -s ~/dotfiles/git/gitconfig ~/.gitconfig
+
 
 if [ "$1" = "visual" ]
     then
