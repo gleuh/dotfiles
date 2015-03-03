@@ -1,14 +1,13 @@
-SRCDIR := $(shell pwd)
-.PHONY: all bash
+.PHONY:all zsh tmux git vim
 
-all: vim git zsh
+all:vim git zsh tmux
 
 zsh:
 	rm -f ~/.zshrc
-        rm -rf ~/.oh-my-zsh
-        ln -s ~/dotfiles/zsh/.zshrc ~/.zshrc
-        ln -s ~/dotfiles/.oh-my-zsh ~/.oh-my-zsh
-	sudo chsh -s /bin/zsh $USER
+	rm -rf ~/.oh-my-zsh
+	ln -s ~/dotfiles/zsh/.zshrc ~/.zshrc
+	ln -s ~/dotfiles/.oh-my-zsh ~/.oh-my-zsh
+	bash -c "sudo chsh -s /bin/zsh $(USER)"
 
 tmux:
 	rm -f ~/.tmux.conf
