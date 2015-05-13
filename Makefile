@@ -1,13 +1,6 @@
-.PHONY:all zsh tmux git vim
+.PHONY:all tmux git vim
 
-all:vim git zsh tmux
-
-zsh:
-	rm -f ~/.zshrc
-	rm -rf ~/.oh-my-zsh
-	ln -s ~/dotfiles/zsh/.zshrc ~/.zshrc
-	ln -s ~/dotfiles/.oh-my-zsh ~/.oh-my-zsh
-	bash -c "sudo chsh -s /bin/zsh $(USER)"
+all:vim git tmux
 
 tmux:
 	rm -f ~/.tmux.conf
@@ -19,6 +12,6 @@ git:
 
 vim:
 	rm -rf ~/.vim ~/.vimrc
-	ln -s ~/dotfiles/vim/.vimrc ~/.vimrc
-	ln -s ~/dotfiles/vim/.vim ~/.vim
+	ln -s ~/dotfiles/.vimrc ~/.vimrc
+	ln -s ~/dotfiles/.vim ~/.vim
 	vim +PluginInstall +qall

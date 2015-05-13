@@ -14,6 +14,7 @@ Plugin 'git@github.com:tpope/vim-vividchalk.git'
 Plugin 'git@github.com:vim-scripts/ZoomWin.git'
 Plugin 'git@github.com:kien/ctrlp.vim.git'
 Plugin 'git@github.com:Lokaltog/vim-powerline.git'
+Plugin 'git@github.com:shawncplus/phpcomplete.vim.git'
 
 call vundle#end()
 filetype plugin indent on
@@ -31,14 +32,15 @@ set history=1000
 set expandtab
 set softtabstop=4
 set shiftwidth=4
-filetype indent off
 set autoindent
 set nocindent
 set smartindent
+set pastetoggle=<F2>
 
-set listchars=tab:▸\ ,eol:¬
+set listchars=tab:▸.,trail:.,eol:¬,nbsp:.,extends:>,precedes:<
 set list
 set backspace=indent,eol,start
+autocmd BufWritePre * :%s/\s\+$//e
 
 "" Searching
 set hlsearch
@@ -59,3 +61,6 @@ map <Leader>w :MBEbw<CR>
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_root_markers = ['.git']
 set wildignore+=*/tmp/*,*/cache/*,*.so,*.swp,*.zip,*/web/coverage/*
+
+"" phpcomplete
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
