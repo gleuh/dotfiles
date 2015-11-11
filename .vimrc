@@ -15,12 +15,14 @@ Plugin 'git@github.com:vim-scripts/ZoomWin.git'
 Plugin 'git@github.com:kien/ctrlp.vim.git'
 Plugin 'git@github.com:Lokaltog/vim-powerline.git'
 Plugin 'git@github.com:shawncplus/phpcomplete.vim.git'
+Plugin 'git@github.com:altercation/vim-colors-solarized.git'
 
 call vundle#end()
 filetype plugin indent on
 
 syntax enable
-colorscheme vividchalk
+set background=dark
+colorscheme solarized
 set encoding=utf-8
 set showcmd
 set mouse=a
