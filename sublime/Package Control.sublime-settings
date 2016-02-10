@@ -1,18 +1,18 @@
 {
+	"bootstrapped": true,
 	"in_process_packages":
 	[
 	],
 	"installed_packages":
 	[
 		"BracketHighlighter",
+		"EditorConfig",
 		"Git",
 		"LESS",
 		"Package Control",
 		"PHP Companion",
 		"PHP Getters and Setters",
 		"PHP-Twig",
-		"SideBarEnhancements",
-		"Wombat Color Scheme",
-		"Wombat Theme"
+		"Pretty JSON"
 	]
 }

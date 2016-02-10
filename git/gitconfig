@@ -12,5 +12,5 @@
     br = branch
     df = diff
 [user]
-        name = Guillaume L
+        name = Guillaume Lenoir
         email = lenoirguillaume@gmail.com
