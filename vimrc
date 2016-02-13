@@ -11,7 +11,7 @@ Plugin 'git@github.com:vim-scripts/ZoomWin.git'
 Plugin 'git@github.com:kien/ctrlp.vim.git'
 Plugin 'git@github.com:editorconfig/editorconfig-vim.git'
 Plugin 'git@github.com:fatih/vim-go.git'
-Plugin 'git@github.com:sickill/vim-monokai.git'
+Plugin 'git@github.com:tomasr/molokai.git'
 Plugin 'git@github.com:vim-scripts/zoom.vim.git'
 Plugin 'git@github.com:easymotion/vim-easymotion.git'
 Plugin 'git@github.com:mileszs/ack.vim.git'
@@ -21,7 +21,7 @@ filetype plugin indent on
 
 syntax enable
 set background=dark
-colorscheme monokai
+colorscheme molokai
 set encoding=utf-8
 set showcmd
 set mouse=a
