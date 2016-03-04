@@ -1,8 +1,9 @@
 {
+	"always_show_minimap_viewport": false,
 	"caret_style": "phase",
 	"close_windows_when_empty": true,
-	"theme": "Seti.sublime-theme",
-	"color_scheme": "Packages/Solarized Color Scheme/Solarized (dark).tmTheme",
+	"color_scheme": "Packages/Solarized Color Scheme/Solarized (light).tmTheme",
+	"draw_minimap_border": false,
 	"draw_white_space": "all",
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
@@ -25,6 +26,8 @@
 		".sass-cache",
 		".svn"
 	],
+	"font_size": 14,
+	"hide_minimap": true,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignore_visibility": true,
@@ -42,9 +45,6 @@
 	"show_full_path": true,
 	"show_line_endings": true,
 	"show_minimap": false,
-	"hide_minimap": true,
-	"draw_minimap_border": false,
-	"always_show_minimap_viewport": false,
 	"tab_size": 4,
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true
