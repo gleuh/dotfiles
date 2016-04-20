@@ -11,8 +11,8 @@ Plugin 'git@github.com:vim-scripts/ZoomWin.git'
 Plugin 'git@github.com:kien/ctrlp.vim.git'
 Plugin 'git@github.com:editorconfig/editorconfig-vim.git'
 Plugin 'git@github.com:fatih/vim-go.git'
-Plugin 'git@github.com:tomasr/molokai.git'
 Plugin 'git@github.com:vim-scripts/zoom.vim.git'
+Plugin 'git@github.com:sickill/vim-monokai.git'
 Plugin 'git@github.com:easymotion/vim-easymotion.git'
 Plugin 'git@github.com:mileszs/ack.vim.git'
 Plugin 'vim-airline/vim-airline'
@@ -24,7 +24,7 @@ filetype plugin indent on
 syntax enable
 set t_Co=256
 set background=dark
-colorscheme molokai
+colorscheme monokai
 set encoding=utf-8
 set showcmd
 set mouse=a
@@ -75,7 +75,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline_powerline_fonts = 1
 set laststatus=2
-let g:airline_theme='molokai'
+let g:airline_theme='monokai'
 
 "" buffers
 nmap <leader>l :bnext<CR>
