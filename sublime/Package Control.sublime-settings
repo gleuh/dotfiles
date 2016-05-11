@@ -15,6 +15,7 @@
 		"JSX",
 		"LESS",
 		"LogView",
+		"Material Theme",
 		"Package Control",
 		"PHP Companion",
 		"PHP Getters and Setters",
@@ -22,8 +23,6 @@
 		"PhpSpec Snippets",
 		"Pretty JSON",
 		"Sass",
-		"Seti_UI",
-		"SideBarEnhancements",
-		"Solarized Color Scheme"
+		"SideBarEnhancements"
 	]
 }
