@@ -19,6 +19,8 @@ tmux:
 git:
 	rm -f ~/.gitconfig
 	ln -s ~/dotfiles/git/gitconfig ~/.gitconfig
+	rm -f ~/.gitignore
+	ln -s ~/dotfiles/git/gitconfig ~/.gitignore
 
 vim:
 	rm -rf ~/.vim ~/.vimrc

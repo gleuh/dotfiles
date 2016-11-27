@@ -7,29 +7,35 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'git@github.com:scrooloose/nerdtree.git'
+Plugin 'git@github.com:scrooloose/nerdcommenter.git'
 Plugin 'git@github.com:vim-scripts/ZoomWin.git'
 Plugin 'git@github.com:kien/ctrlp.vim.git'
 Plugin 'git@github.com:editorconfig/editorconfig-vim.git'
 Plugin 'git@github.com:fatih/vim-go.git'
-Plugin 'git@github.com:vim-scripts/zoom.vim.git'
-Plugin 'git@github.com:easymotion/vim-easymotion.git'
 Plugin 'git@github.com:mileszs/ack.vim.git'
+Plugin 'git@github.com:lumiliet/vim-twig.git'
+Plugin 'git@github.com:morhetz/gruvbox.git'
 
 call vundle#end()
 filetype plugin indent on
 
 syntax enable
+colorscheme gruvbox
 set t_Co=256
 set background=dark
-colorscheme darkblue
 set encoding=utf-8
 set showcmd
 set mouse=a
 set cursorline
 set history=1000
 
+"" Interface
+set ls=2
+
 "" Whitespace
-"" set nowrap
+set nowrap
+set showmatch
+set notitle
 set nocompatible
 set scrolloff=3
 set expandtab
@@ -42,7 +48,6 @@ set pastetoggle=<F2>
 set ruler
 set number
 set nobackup
-set directory=~/.vim/tmp
 
 set listchars=tab:▸.,trail:.,eol:¬,nbsp:.,extends:>,precedes:<
 set list
@@ -50,11 +55,19 @@ set backspace=indent,eol,start
 "" autocmd BufWritePre * :%s/\s\+$//e
 autocmd BufEnter * :syntax sync fromstart
 
+" Change statusbar color depending on the mode
+au InsertEnter * hi StatusLine ctermfg=229 ctermbg=106
+au InsertLeave * hi StatusLine ctermfg=7 ctermfg=0
+
 "" Searching
 set hlsearch
 set incsearch
 set ignorecase
 set smartcase
+
+" faster viewport scrolling
+nnoremap <C-j> 5j
+nnoremap <C-k> 3k
 
 "" leader
 let mapleader = ","
