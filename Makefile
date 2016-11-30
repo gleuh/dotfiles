@@ -20,7 +20,7 @@ git:
 	rm -f ~/.gitconfig
 	ln -s ~/dotfiles/git/gitconfig ~/.gitconfig
 	rm -f ~/.gitignore_global
-	ln -s ~/dotfiles/git/gitconfig ~/.gitignore_global
+	ln -s ~/dotfiles/git/gitignore ~/.gitignore_global
 
 vim:
 	rm -rf ~/.vim ~/.vimrc
