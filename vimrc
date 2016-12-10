@@ -76,13 +76,13 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'git@github.com:scrooloose/nerdtree.git'
 Plugin 'git@github.com:scrooloose/nerdcommenter.git'
 Plugin 'git@github.com:vim-scripts/ZoomWin.git'
-Plugin 'git@github.com:kien/ctrlp.vim.git'
 Plugin 'git@github.com:editorconfig/editorconfig-vim.git'
 Plugin 'git@github.com:fatih/vim-go.git'
-Plugin 'git@github.com:mileszs/ack.vim.git'
 Plugin 'git@github.com:lumiliet/vim-twig.git'
 Plugin 'git@github.com:morhetz/gruvbox.git'
 Plugin 'git@github.com:docteurklein/php-getter-setter.vim.git'
+Plugin 'git@github.com:wincent/Command-T.git'
+Plugin 'git@github.com:rking/ag.vim.git'
 
 call vundle#end()
 filetype plugin indent on
@@ -99,5 +99,19 @@ map <Leader>n :NERDTreeToggle<CR>
 "" ctrlp
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_root_markers = ['.git']
-set wildignore+=*/tmp/*,*/cache/*,*.so,*.swp,*.zip,*/web/coverage/*
+set wildignore+=*/tmp/*,*/cache/*,*.so,*.swp,*.zip,*/web/coverage/*,*/logs/*,*/node_modules/*
+
 colorscheme gruvbox
+
+"" buffers
+nmap <leader>l :bnext<CR>
+nmap <leader>h :bprevious<CR>
+nmap <leader>bq :bp <BAR> bd #<CR>
+nmap <leader>bl :ls<CR>
+
+"" Command-T
+let g:CommandTMaxFiles=30000        " Increase cache size
+map <leader>t :CommandT<cr>
+
+"" Ack
+nmap <leader>a :Ag
