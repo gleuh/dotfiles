@@ -110,7 +110,7 @@ nmap <leader>bq :bp <BAR> bd #<CR>
 nmap <leader>bl :ls<CR>
 
 "" Command-T
-let g:CommandTMaxFiles=30000        " Increase cache size
+let g:CommandTMaxFiles=60000        " Increase cache size
 map <leader>t :CommandT<cr>
 
 "" Ack
