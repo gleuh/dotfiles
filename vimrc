@@ -1,26 +1,12 @@
 set nocompatible
-filetype off
 
-" vundle
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'gmarik/Vundle.vim'
+autocmd BufEnter * :syntax sync fromstart
 
-Plugin 'git@github.com:scrooloose/nerdtree.git'
-Plugin 'git@github.com:scrooloose/nerdcommenter.git'
-Plugin 'git@github.com:vim-scripts/ZoomWin.git'
-Plugin 'git@github.com:editorconfig/editorconfig-vim.git'
-Plugin 'git@github.com:fatih/vim-go.git'
-Plugin 'git@github.com:lumiliet/vim-twig.git'
-Plugin 'git@github.com:morhetz/gruvbox.git'
-Plugin 'git@github.com:wincent/Command-T.git'
-Plugin 'git@github.com:rking/ag.vim.git'
-
-call vundle#end()
-filetype plugin indent on
+filetype on
+filetype plugin on
+filetype indent on
 
 syntax enable
-colorscheme gruvbox
 set t_Co=256
 set background=dark
 set encoding=utf-8
@@ -33,7 +19,7 @@ set history=1000
 set ls=2
 
 "" Whitespace
-set nowrap
+"" set nowrap
 set showmatch
 set notitle
 set nocompatible
@@ -67,10 +53,45 @@ set smartcase
 
 " faster viewport scrolling
 nnoremap <C-j> 5j
-nnoremap <C-k> 3k
+nnoremap <C-k> 5k
 
 "" leader
 let mapleader = ","
+
+"" buffers
+nmap <leader>l :bnext<CR>
+nmap <leader>h :bprevious<CR>
+nmap <leader>bq :bp <BAR> bd #<CR>
+nmap <leader>bl :ls<CR>
+
+autocmd BufWritePre * %s/\s\+$//e
+
+filetype off
+
+" vundle
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
+
+Plugin 'git@github.com:scrooloose/nerdtree.git'
+Plugin 'git@github.com:scrooloose/nerdcommenter.git'
+Plugin 'git@github.com:vim-scripts/ZoomWin.git'
+Plugin 'git@github.com:editorconfig/editorconfig-vim.git'
+Plugin 'git@github.com:fatih/vim-go.git'
+Plugin 'git@github.com:lumiliet/vim-twig.git'
+Plugin 'git@github.com:morhetz/gruvbox.git'
+Plugin 'git@github.com:docteurklein/php-getter-setter.vim.git'
+Plugin 'git@github.com:wincent/Command-T.git'
+Plugin 'git@github.com:rking/ag.vim.git'
+
+call vundle#end()
+filetype plugin indent on
+
+"" autocompletion
+set omnifunc=syntaxcomplete#Complete
+set tags+=vendor.tags
+set wildmenu                        " Better completion
+set wildmode=list:longest           " BASH style completion
 
 "" NerdTree
 map <Leader>n :NERDTreeToggle<CR>
@@ -79,6 +100,8 @@ map <Leader>n :NERDTreeToggle<CR>
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_root_markers = ['.git']
 set wildignore+=*/tmp/*,*/cache/*,*.so,*.swp,*.zip,*/web/coverage/*,*/logs/*,*/node_modules/*
+
+colorscheme gruvbox
 
 "" buffers
 nmap <leader>l :bnext<CR>
