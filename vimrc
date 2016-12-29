@@ -115,3 +115,7 @@ map <leader>t :CommandT<cr>
 
 "" Ack
 nmap <leader>a :Ag
+
+" Easily switch between relative & absolute number
+nmap <leader>na :set number<cr>
+nmap <leader>nr :set relativenumber<cr>
