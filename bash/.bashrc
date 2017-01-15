@@ -32,7 +32,7 @@ PATH=$PATH:/usr/local/bin
 
 # aliases
 alias ls='ls -G'
-alias ctags-generate='ctags -R --languages=PHP --PHP-kinds=cif --exclude=.git/* --exclude=vendor/*/vendor --fields=+aimS'
+alias ctags-generate='docker run -it --rm -v $PWD:/app herzult/composer-ctags'
 
 # external sources
 source ~/dotfiles/bash/git-completion.bash
