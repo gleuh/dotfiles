@@ -33,3 +33,4 @@ PATH=$PATH:/usr/local/bin
 
 # aliases
 alias ls='ls -G'
+alias ctags-generate='ctags -R --languages=PHP --PHP-kinds=cif --exclude=.git/* --exclude=vendor/*/vendor --fields=+aimS'
