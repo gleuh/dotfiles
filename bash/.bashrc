@@ -26,7 +26,6 @@ prompt() {
 
 PROMPT_COMMAND=prompt
 
-export HOMEBREW_GITHUB_API_TOKEN=a3e5307ffd18b0ea4d4fc2058bbb27f4a3c55a94
 export EDITOR=vim
 
 PATH=$PATH:/usr/local/bin
@@ -34,3 +33,6 @@ PATH=$PATH:/usr/local/bin
 # aliases
 alias ls='ls -G'
 alias ctags-generate='ctags -R --languages=PHP --PHP-kinds=cif --exclude=.git/* --exclude=vendor/*/vendor --fields=+aimS'
+
+# external sources
+source ~/dotfiles/bash/git-completion.bash
