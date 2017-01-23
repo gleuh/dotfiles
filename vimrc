@@ -94,7 +94,7 @@ set wildmenu                        " Better completion
 set wildmode=list:longest           " BASH style completion
 
 "" NerdTree
-map <Leader>n :NERDTreeToggle<CR>
+" map <Leader>n :NERDTreeToggle<CR>
 
 "" ctrlp
 let g:ctrlp_cmd = 'CtrlPMixed'
