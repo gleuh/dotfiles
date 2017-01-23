@@ -7,7 +7,7 @@ prompt() {
 
     base="${color_grey}\T ${color_green}\w${color_base}"
 
-    if [[ $(git status 2> /dev/null | tail -n1) = "nothing to commit, working directory clean" ]]
+    if [[ $(git status 2> /dev/null | tail -n1) = "nothing to commit, working directory clean" ]] || [[ $(git status 2> /dev/null | tail -n1) = "nothing to commit, working tree clean" ]]
     then
         dirty="";
     else
@@ -23,16 +23,25 @@ prompt() {
 
     PS1="${base}${git} \$ "
 }
-
 PROMPT_COMMAND=prompt
 
+# export ENVs
 export EDITOR=vim
+export THEFORK_WORKSPACE=/Users/guillaume/www
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export HOMEBREW_GITHUB_API_TOKEN="cf59b81da213fc69dff65d2b1078deffe7d656f6"
 
 PATH=$PATH:/usr/local/bin
+
+ssh-add ~/.ssh/id_rsa
+
+# rvm
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # aliases
 alias ls='ls -G'
 alias ctags-generate='docker run -it --rm -v $PWD:/app herzult/composer-ctags'
+alias twgit="/usr/bin/env PATH=${HOME}/.local/installs/homebrew/bin:${HOME}/.local/scripts:${PATH} ~/.local/scripts/twgit"
 
 # external sources
 source ~/dotfiles/bash/git-completion.bash

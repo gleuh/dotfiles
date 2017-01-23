@@ -73,7 +73,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
-Plugin 'git@github.com:scrooloose/nerdtree.git'
+" Plugin 'git@github.com:scrooloose/nerdtree.git'
 Plugin 'git@github.com:scrooloose/nerdcommenter.git'
 Plugin 'git@github.com:vim-scripts/ZoomWin.git'
 Plugin 'git@github.com:editorconfig/editorconfig-vim.git'
