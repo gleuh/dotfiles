@@ -1,57 +1,60 @@
 {
-	"always_show_minimap_viewport": false,
-	"bold_folder_labels": true,
-	"caret_style": "phase",
-	"close_windows_when_empty": true,
-	"draw_minimap_border": false,
-	"draw_white_space": "all",
-	"ensure_newline_at_eof_on_save": true,
-	"file_exclude_patterns":
-	[
-		"._*",
-		".DS_Store",
-		"npm-debug.log"
-	],
-	"folder_exclude_patterns":
-	[
-		"node_modules",
-		"app/cache",
-		"app/logs",
-		"web/js",
-		"web/css",
-		"web/bower_components",
-		".bundle",
-		".cache",
-		".git",
-		".sass-cache",
-		".svn"
-	],
-	"hide_minimap": true,
-	"highlight_line": true,
-	"highlight_modified_tabs": true,
-	"ignore_inodes": true,
-	"ignore_visibility": true,
-	"ignored_packages":
-	[
-		"Vintage"
-	],
-	"indent_guide_options":
-	[
-		"draw_normal",
-		"draw_active"
-	],
-	"overlay_scroll_bars": "enabled",
-	"rulers":
-	[
-		80,
-		120
-	],
-	"show_encoding": true,
-	"show_full_path": true,
-	"show_line_endings": true,
-	"show_minimap": false,
-	"tab_size": 4,
-	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true,
-	"word_wrap": true
+    "theme": "gruvbox (Dark) (Hard).sublime-theme",
+    "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Hard).tmTheme",
+    "always_show_minimap_viewport": false,
+    "bold_folder_labels": true,
+    "caret_style": "phase",
+    "close_windows_when_empty": true,
+    "draw_minimap_border": false,
+    "draw_white_space": "all",
+    "ensure_newline_at_eof_on_save": true,
+    "file_exclude_patterns":
+    [
+        "._*",
+        ".DS_Store",
+        "npm-debug.log"
+    ],
+    "folder_exclude_patterns":
+    [
+        "node_modules",
+        "app/cache",
+        "app/logs",
+        "web/js",
+        "web/css",
+        "web/bower_components",
+        "web/bundles",
+        ".bundle",
+        ".cache",
+        ".git",
+        ".sass-cache",
+        ".svn"
+    ],
+    "hide_minimap": true,
+    "highlight_line": true,
+    "highlight_modified_tabs": true,
+    "ignore_inodes": true,
+    "ignore_visibility": true,
+    "ignored_packages":
+    [
+        "Vintage"
+    ],
+    "indent_guide_options":
+    [
+        "draw_normal",
+        "draw_active"
+    ],
+    "overlay_scroll_bars": "enabled",
+    "rulers":
+    [
+        80,
+        120
+    ],
+    "show_encoding": true,
+    "show_full_path": true,
+    "show_line_endings": true,
+    "show_minimap": false,
+    "tab_size": 4,
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": true,
+    "word_wrap": true
 }
