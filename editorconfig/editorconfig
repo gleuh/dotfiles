@@ -8,15 +8,19 @@ trim_trailing_whitespace = true
 indent_style = space
 indent_size = 4
 
+[{Makefile,makefile}]
+indent_style = tab
+indent_size = 4
+
 [*.php]
 indent_style = space
 indent_size = 4
 
-[*.js]
+[*.{js,jsx}]
 indent_style = space
 indent_size = 2
 
-[*.css]
+[*.{css,less,scss}]
 indent_style = space
 indent_size = 2
 

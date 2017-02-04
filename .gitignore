@@ -2,3 +2,4 @@ vim/bundle/
 *swp
 .DS_Store
 vim/.netrwhist
+bash/bash_vars

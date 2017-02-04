@@ -23,9 +23,10 @@ vim:
 	vim +PluginInstall +qall
 
 bash:
-	rm -rf ~/.bashrc ~/.bash_profile
+	rm -rf ~/.bashrc ~/.bash_profile ~/.bash_vars
 	ln -s ~//dotfiles/bash/.bashrc ~/.bashrc
 	ln -s ~/dotfiles/bash/.bash_profile ~/.bash_profile
+	ln -s ~/dotfiles/bash/bash_vars ~/.bash_vars
 
 
 sublime:

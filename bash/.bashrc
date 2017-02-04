@@ -29,7 +29,6 @@ PROMPT_COMMAND=prompt
 export EDITOR=vim
 export THEFORK_WORKSPACE=/Users/guillaume/www
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-export HOMEBREW_GITHUB_API_TOKEN="cf59b81da213fc69dff65d2b1078deffe7d656f6"
 
 PATH=$PATH:/usr/local/bin
 
