@@ -1,6 +1,6 @@
-.PHONY:all editorconfig tmux git vim bash sublime
+.PHONY:all editorconfig tmux git vim bash zsh
 
-all:editorconfig tmux git vim bash sublime
+all:editorconfig tmux git vim bash zsh
 
 editorconfig:
 	rm -f ~/.editorconfig
@@ -28,9 +28,6 @@ bash:
 	ln -s ~/dotfiles/bash/.bash_profile ~/.bash_profile
 	ln -s ~/dotfiles/bash/bash_vars ~/.bash_vars
 
-
-sublime:
-	rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/*
-	ln -s ~/dotfiles/sublime/Default\ \(OSX\).sublime-keymap ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
-	ln -s ~/dotfiles/sublime/Package\ Control.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
-	ln -s ~/dotfiles/sublime/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+zsh:
+	rm -rf ~/.zshrc
+	ln -s ~/dotfiles/zsh/.zshrc ~/.zshrc

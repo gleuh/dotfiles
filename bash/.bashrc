@@ -29,6 +29,8 @@ PROMPT_COMMAND=prompt
 export EDITOR=vim
 export THEFORK_WORKSPACE=/Users/guillaume/www
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export GOPATH=$HOME/goprojects
+export PATH=$PATH:$(go env GOPATH)/bin
 
 PATH=$PATH:/usr/local/bin
 
