@@ -1,7 +1,0 @@
-[
-    { "keys": ["alt+f"], "command": "expand_fqcn" },
-    { "keys": ["alt+u"], "command": "find_use" },
-    { "keys": ["alt+i"], "command": "import_namespace" },
-    { "keys": ["alt+g"], "command": "goto_definition_scope" },
-    { "keys": ["super+enter"], "command": "toggle_side_bar" }
-]

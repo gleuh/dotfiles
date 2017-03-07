@@ -83,6 +83,7 @@ Plugin 'git@github.com:morhetz/gruvbox.git'
 Plugin 'git@github.com:docteurklein/php-getter-setter.vim.git'
 Plugin 'git@github.com:wincent/Command-T.git'
 Plugin 'git@github.com:rking/ag.vim.git'
+Plugin 'git@github.com:junegunn/fzf.vim.git'
 
 call vundle#end()
 filetype plugin indent on
@@ -110,8 +111,11 @@ nmap <leader>bq :bp <BAR> bd #<CR>
 nmap <leader>bl :ls<CR>
 
 "" Command-T
-let g:CommandTMaxFiles=60000        " Increase cache size
-map <leader>t :CommandT<cr>
+"" let g:CommandTMaxFiles=60000        " Increase cache size
+"" map <leader>t :CommandT<cr>
+
+"" fzf
+set rtp+=/usr/local/opt/fzf
 
 "" Ack
 nmap <leader>a :Ag

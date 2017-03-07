@@ -1,14 +1,10 @@
-.PHONY:all editorconfig tmux git vim bash zsh
+.PHONY:all editorconfig git vim zsh hyper
 
-all:editorconfig tmux git vim bash zsh
+all: editorconfig git vim zsh hyper
 
 editorconfig:
 	rm -f ~/.editorconfig
 	ln -s ~/dotfiles/editorconfig/editorconfig ~/.editorconfig
-
-tmux:
-	rm -f ~/.tmux.conf
-	ln -s ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
 
 git:
 	rm -f ~/.gitconfig
@@ -22,12 +18,10 @@ vim:
 	ln -s ~/dotfiles/vim ~/.vim
 	vim +PluginInstall +qall
 
-bash:
-	rm -rf ~/.bashrc ~/.bash_profile ~/.bash_vars
-	ln -s ~//dotfiles/bash/.bashrc ~/.bashrc
-	ln -s ~/dotfiles/bash/.bash_profile ~/.bash_profile
-	ln -s ~/dotfiles/bash/bash_vars ~/.bash_vars
-
 zsh:
 	rm -rf ~/.zshrc
 	ln -s ~/dotfiles/zsh/.zshrc ~/.zshrc
+
+hyper:
+	rm -rf ~/.hyper.js
+	ln -s ~/dotfiles/.hyper.js ~/.hyper.js

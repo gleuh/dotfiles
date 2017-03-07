@@ -98,3 +98,4 @@ ssh-add ~/.ssh/id_rsa
 
 # aliases
 alias ls='ls -G'
+alias s='generate-google-search() { old=$IFS;IFS="+";echo "https://www.google.com/search?q=$*";IFS=$old };generate-google-search'

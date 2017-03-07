@@ -1,7 +1,9 @@
 dotfiles
 ========
 
-brew install tmux vim docker ctags curl
+brew update
+brew cask install hyper
+brew install vim docker ctags curl
 
 
 bash_vars
