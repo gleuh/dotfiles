@@ -85,7 +85,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export EDITOR=vim
-export THEFORK_WORKSPACE=/Users/guillaume/www
 export GOPATH=$HOME/goprojects
 export PATH=$PATH:$(go env GOPATH)/bin
 export PATH=$PATH:/usr/local/bin
@@ -98,4 +97,3 @@ ssh-add ~/.ssh/id_rsa
 
 # aliases
 alias ls='ls -G'
-alias s='generate-google-search() { old=$IFS;IFS="+";echo "https://www.google.com/search?q=$*";IFS=$old };generate-google-search'
